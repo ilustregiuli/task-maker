@@ -20,7 +20,7 @@ def adiciona_tarefa():
         "concluida": False
     }
 
-    with open("db_tarefas.json", "w") as db_tarefas:
+    with open("db_tarefas.json", "a") as db_tarefas:
         j.dump(tarefa, db_tarefas)
 
 adiciona_tarefa()
